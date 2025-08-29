@@ -228,9 +228,11 @@ a img:hover{
     justify-content: center;
     border-radius: 20px;
 }
+
 #contactForm button{
     width: 100%;
 }
+
 textarea,#contactForm input{
     border:solid 1px gray;
 }
@@ -241,4 +243,13 @@ textarea,#contactForm input{
     flex-direction: row;
     align-items: center;
     gap:10px;
+}
+
+#result{
+    display:flex;
+    flex-direction: column;
+    height: 300px;
+    width:300px;
+    align-items: center;
+    justify-content: center;
 }
