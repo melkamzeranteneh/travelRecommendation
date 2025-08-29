@@ -4,60 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Travel recommendation</title>
 </head>
 <body>
-    <nav>
-        <div id="logo-holder">logo</div>
-        <ul>
+    <nav class="row-struct main-nav">
+        <img src="icons/Logo.png" width="50px">
+        <ul class="row-struct links">
             <a href="travel_recommendation.html">Home</a>
             <a href="travel_recommendation-About.html">About Us</a>
-            <a href="travel_recommendation-contact.html"">Contact Us</a>
-            <div id="Search-bar">
-                <input type="text" id="search-input" placeholder="Enter a destination or Keyword...">
-                <button id="search-btn">Search</button>
-                <button id="reset-btn">Reset</button>
-            </div>
+            <a href="travel_recommendation-contact.html">Contact Us</a>
         </ul>
+        <div id="Search-bar">
+            <input type="text" id="search-input" placeholder="Enter a destination or Keyword...">
+            <img src="icons/search.png" width="20px">
+            <button id="search-btn">Search</button>
+            <button id="reset-btn">Reset</button>
+        </div>
     </nav>
     <section id="Home-page" class="Main">
         <nav id="vertical-social-media">
-
+            <div style="border-left:2px solid white; height:150px; width:2px;"></div>
+            <a href="https://www.facebook.com" target="_blank"><img src="icons/Facebook.png" width="50px"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="icons/Instagram.png" width="50px"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="icons/Youtube.png" width="50px"></a>        
         </nav>
-        <div>
+        <div class="Main-container">
             <h1>ABOUT US</h1>
-            <p class="about-description">
-                welcome to Our Company! weare a team of passionate individuals dediacted to providing excellent services/products to our customers. Our mission is to <strong>provide the best experience</strong> for people peolpe travellign to differet destination around the world.
-            </p>
-            <p class="about-description">
-                Our values include integrity, inovation, custner satisfaction, and teamwork. We belive in <strong>Putting our customers first</strong> and working together toachieve our goals.
-            </p>
-            <p class="about-description">
-                Feel free to explore our website to learn more About
-            </p>
+            <div class="Para-dark">
+                <p class="about-description">
+                    welcome to Our Company! weare a team of passionate individuals dediacted to providing excellent services/products to our customers. Our mission is to <strong>provide the best experience</strong> for people peolpe travellign to differet destination around the world.
+                </p>
+                <p class="about-description">
+                    Our values include integrity, inovation, custner satisfaction, and teamwork. We belive in <strong>Putting our customers first</strong> and working together toachieve our goals.
+                </p>
+                <p class="about-description">
+                    Feel free to explore our website to learn more About
+                </p>
+            </div>
             <div class="Team-description">
                 <h1>
                     Our
                     Team
                 </h1>
-                <div class="Team-card">
-                    <div class="box-image" width="30px" height="30px"></div>
-                    <div class="Team-card-left">
+                <div class="Team-card-holder">
+                    <div class="Team-card">
+                        <img src="icons/Logo.png" width="40px" height="40px">
                         <h4>John Doe</h4>
                         <p>Cheif Executive Officer</p>
                         <button>CEO</button>
                     </div>
-                    <div class="box-image" width="30px" height="30px"></div>
-                    <div class="Team-card-left">
+                    <div class="Team-card">
+                        <img src="icons/Logo.png" width="40px" height="40px">
                         <h4>Celina Thaomas</h4>
                         <p>Team Lead</p>
                         <button>TL</button>
                     </div>
-                    <div class="box-image" width="30px" height="30px"></div>
-                    <div class="Team-card-left">
+                    <div class="Team-card">
+                        <img src="icons/Logo.png" width="40px" height="40px">
                         <h4>Mike Tyson</h4>
-                        <p>Cheif Executive Officer</p>
-                        <button>Delivery Head</button>
+                        <p>Delivery Head</p>
+                        <button>DH</button>
                     </div>
                 </div>
             </div>

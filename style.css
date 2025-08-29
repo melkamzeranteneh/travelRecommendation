@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 0px 10px 5px 10px;
+}
+body{
+    background-image : url(background-img.jpg);
+    background-size : cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    font-family: sans-serif;
+    color:white;
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight:500;
+    background: #007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover{
+    background: #0056b3;
+    transform:translateY(-2px);
+}
+button:active{
+    transform:translateY(0);
+}
+.row-struct{
+    padding:0px 10px;
+    width:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+#search-bar{
+    justify-content:left;
+}
+.links a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight:500;
+    color:white;
+    border-radius:8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.links a:hover{
+    transform:translateY(-2px);
+}
+.links a:active{
+    transform:translateY(0);
+}
+h1{
+    width:30px;
+    font-weight: 900;
+    font-size:72px;
+    line-height:1;
+    letter-spacing: 0px;
+}
+#Search-bar{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background-color: white;
+    border-radius: 30px;
+}
+input{
+    background-color: white;
+    font:sans-serif;
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+    width:250px;
+    padding:10px;
+    border: none;
+    transition: none;
+}
+input::placeholder{
+    font:serif;
+    font-size:16px;
+    font-weight: 500;
+    color:black;
+    opacity: 1;
+}
+input:focus{
+    outline:none;
+    font:serif;
+    font-size:16px;
+    font-weight: 500;
+    color:black;
+    opacity: 1;
+}
+
+textarea{
+    background-color: white;
+    font:sans-serif;
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+    width:250px;
+    padding:10px;
+    border: none;
+    transition: none;
+}
+textarea::placeholder{
+    font:serif;
+    font-size:16px;
+    font-weight: 500;
+    color:black;
+    opacity: 1;
+}
+textarea:focus{
+    outline:none;
+    font:serif;
+    font-size:16px;
+    font-weight: 500;
+    color:black;
+    opacity: 1;
+}
+
+.main-nav{
+    padding:10px 20px;
+    width:100h;
+    background-color:rgba(0,0,0,0.75);
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+}
+#vertical-social-media{
+    margin-left:20px;
+    display:flex;
+    height: 80vh;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+}
+#Home-page{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+}
+.website-description{
+    width: 500px;
+    line-height:1.3;
+}
+.Main-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+a img{
+    border-radius:50%;
+    transition: transform 0.2s ease;
+}
+a img:hover{
+    transform:scale(1.1);
+}
+.Team-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 150px;
+    gap:50px;
+}
+.Team-card-holder{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    gap:30px;
+    padding: 20px;
+    justify-content: flex-end;
+}
+.Team-card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.75);
+    padding:30px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.Team-card button{
+    width: 100%;
+}
+.Para-dark{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.15);
+    backdrop-filter: blur(5px);
+}
+.contact-div{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 150px;
+}
+#contactForm{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px 50px 20px;
+    background-color: rgba(256,256,256,0.50);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+#contactForm button{
+    width: 100%;
+}
+textarea,#contactForm input{
+    border:solid 1px gray;
+}
+
+#contactForm div{
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}

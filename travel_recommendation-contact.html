@@ -4,28 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Travel recommendation</title>
 </head>
 <body>
-    <nav>
-        <div id="logo-holder">logo</div>
-        <ul>
+    <nav class="row-struct main-nav">
+        <img src="icons/Logo.png" width="50px">
+        <ul class="row-struct links">
             <a href="travel_recommendation.html">Home</a>
             <a href="travel_recommendation-About.html">About Us</a>
-            <a href="travel_recommendation-contact.html"">Contact Us</a>
-            <div id="Search-bar">
-                <input type="text" id="search-input" placeholder="Enter a destination or Keyword...">
-                <button id="search-btn">Search</button>
-                <button id="reset-btn">Reset</button>
-            </div>
+            <a href="travel_recommendation-contact.html">Contact Us</a>
         </ul>
+        <div id="Search-bar">
+            <input type="text" id="search-input" placeholder="Enter a destination or Keyword...">
+            <img src="icons/search.png" width="20px">
+            <button id="search-btn">Search</button>
+            <button id="reset-btn">Reset</button>
+        </div>
     </nav>
     <section id="Home-page" class="Main">
-        <nav id="vertical-socal-media">
+        <nav id="vertical-social-media">
+            <div style="border-left:2px solid white; height:150px; width:2px;"></div>
+            <a href="https://www.facebook.com" target="_blank"><img src="icons/Facebook.png" width="50px"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="icons/Instagram.png" width="50px"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="icons/Youtube.png" width="50px"></a>        
         </nav>
-        <div>
-            <h1>Explore Deam destination</h1>
-            <p class="Contact">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while persuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+        <div class="contact-div">
+            <div>                
+                <h1>CONTACT US</h1>
+                <p class="Contact-us"  width="100px">Get in touch</p>
+            </div>
+            <form id="contactForm">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter yor name" required>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter yor email" required>
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="2" required></textarea>
+                </div>
+                <button type="submit" onclick="thankyou()">Submit</button>
+              </form>
         </div>
     </section>
 </body>
