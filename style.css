@@ -245,11 +245,51 @@ textarea,#contactForm input{
     gap:10px;
 }
 
-#result{
-    display:flex;
+#result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: none;
+    min-height: 100px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.recommendation-card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    padding: 24px 20px 20px 20px;
+    min-width: 260px;
+    max-width: 340px;
+    color: black;
+    display: flex;
     flex-direction: column;
-    height: 300px;
-    width:300px;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.recommendation-card img {
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.recommendation-card h2, .recommendation-card h3 {
+    margin: 8px 0 4px 0;
+    text-align: center;
+}
+.recommendation-card p {
+    margin: 8px 0 12px 0;
+    text-align: center;
+}
+.recommendation-card button {
+    margin-top: 10px;
+    width: 100%;
+}
+.recommendation-card.not-found {
+    background: rgba(255,0,0,0.15);
+    color: #ffb3b3;
+    font-weight: bold;
+    border: 1px solid #ffb3b3;
 }
